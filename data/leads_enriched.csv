@@ -1,0 +1,11 @@
+name,title,company,profile_source,person_location,company_hq,company_clean,funding_stage,recent_liver_toxicity_publication,uses_in_vitro_models,open_to_nams
+Jane Smith,Director of Toxicology,Helix Biotech,LinkedIn,Boston MA,Cambridge MA,helix biotech,Series B,True,False,True
+Rahul Mehta,Head of Preclinical Safety,OncoNova Therapeutics,LinkedIn,San Diego CA,San Diego CA,onconova therapeutics,Series A,False,False,True
+Emily Chen,Senior Scientist Toxicology,BioSphere Labs,PubMed,San Francisco CA,Bay Area CA,biosphere labs,Bootstrapped,True,True,True
+Thomas Weber,VP Safety Assessment,NeoCure Pharma,Conference,Santa Clara CA,Bay Area CA,neocure pharma,Series B,False,False,True
+Ananya Rao,Principal Scientist Liver Toxicity,GenRx Biosciences,PubMed,Bangalore India,Bangalore India,genrx biosciences,Grant Funded,True,True,False
+Michael Brown,Director Preclinical Safety,Vertex Therapeutics,LinkedIn,Boston MA,Boston MA,vertex therapeutics,Public,False,False,True
+Sophie Laurent,Head of Investigative Toxicology,InVitroX,Conference,Basel Switzerland,Basel Switzerland,invitrox,Series A,True,True,True
+Daniel Kim,Associate Director Toxicology,ArcBio,LinkedIn,San Mateo CA,Bay Area CA,arcbio,Seed,True,False,True
+Laura Martinez,Senior Researcher Hepatic Models,Uni of Texas Medical Branch,PubMed,Galveston TX,Texas USA,uni of texas medical branch,Grant Funded,True,False,False
+Peter Hoffmann,Director Drug Safety,BioNTech,LinkedIn,Mainz Germany,Mainz Germany,biontech,Public,False,False,True

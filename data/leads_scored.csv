@@ -1,0 +1,11 @@
+rank,probability_score,name,title,company,person_location,company_hq,funding_stage,profile_source
+1,100,Jane Smith,Director of Toxicology,Helix Biotech,Boston MA,Cambridge MA,Series B,LinkedIn
+2,100,Emily Chen,Senior Scientist Toxicology,BioSphere Labs,San Francisco CA,Bay Area CA,Bootstrapped,PubMed
+3,100,Sophie Laurent,Head of Investigative Toxicology,InVitroX,Basel Switzerland,Basel Switzerland,Series A,Conference
+4,90,Daniel Kim,Associate Director Toxicology,ArcBio,San Mateo CA,Bay Area CA,Seed,LinkedIn
+5,70,Thomas Weber,VP Safety Assessment,NeoCure Pharma,Santa Clara CA,Bay Area CA,Series B,Conference
+6,60,Rahul Mehta,Head of Preclinical Safety,OncoNova Therapeutics,San Diego CA,San Diego CA,Series A,LinkedIn
+7,55,Ananya Rao,Principal Scientist Liver Toxicity,GenRx Biosciences,Bangalore India,Bangalore India,Grant Funded,PubMed
+8,50,Michael Brown,Director Preclinical Safety,Vertex Therapeutics,Boston MA,Boston MA,Public,LinkedIn
+9,40,Laura Martinez,Senior Researcher Hepatic Models,Uni of Texas Medical Branch,Galveston TX,Texas USA,Grant Funded,PubMed
+10,40,Peter Hoffmann,Director Drug Safety,BioNTech,Mainz Germany,Mainz Germany,Public,LinkedIn
