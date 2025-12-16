@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Lead Intelligence Dashboard", layout="wide")
 
-st.title("🔬 Lead Intelligence Dashboard")
+st.title(" Lead Intelligence Dashboard")
 st.subheader("3D In-Vitro Models – High-Probability Leads")
 
 # Load scored data
