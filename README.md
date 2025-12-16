@@ -1,104 +1,70 @@
-Got it 👍
-Here’s a **clean, professional, submission-ready `README.md`** you can **copy-paste as is** into your repo.
-It’s written exactly at the level reviewers expect (clear, business-aware, not overengineered).
+
+# Lead Intelligence Agent (Demo)
+
+A prototype **lead intelligence and scoring system** that identifies, enriches, and ranks high-probability business development leads for **3D in-vitro models in drug safety and toxicology**.
+
+This project was built as a **working demo** to showcase how a web agent can combine professional profiles, scientific signals, and business context into a ranked lead list.
 
 ---
 
-```markdown
-# Lead Intelligence Web Agent – 3D In-Vitro Models
+## What This Demo Does
 
-This repository contains a prototype **lead-intelligence web agent** designed to help
-business development teams identify, enrich, and prioritize high-probability prospects
-interested in **3D in-vitro models for therapy development**.
-
-The system mimics how a BD professional would combine **scientific intent**, **company
-readiness**, and **role relevance** to decide who to contact first.
-
----
-
-## Problem Statement
-
-Teams working on advanced 3D in-vitro models face a large universe of potential contacts
-across industry, academia, publications, and conferences.
-
-The challenge is not finding leads, but **prioritizing who is most likely to want to work
-with such technologies**.
-
-This project demonstrates a structured approach to:
-- Identifying relevant profiles
-- Enriching them with scientific and business context
-- Ranking them using a weighted “propensity-to-buy” model
-
----
-
-## System Overview
-
-### Pipeline
-
-1. **Identification**
-   - Profiles sourced from:
-     - LinkedIn / professional networks
-     - PubMed authors
-     - Conference participants (e.g. toxicology, safety assessment)
-
-2. **Enrichment**
-   - Company funding stage (simulated business intelligence)
-   - Scientific activity (recent liver/toxicology publications)
-   - Technographic fit (in-vitro model relevance)
-   - Geographic hubs (Boston, Bay Area, Basel, UK, etc.)
-
-3. **Scoring**
-   - Rule-based probability score (0–100)
-   - Combines scientific intent and commercial readiness
-
-4. **Output**
-   - Ranked CSV of leads
-   - Interactive Streamlit dashboard for filtering and export
+1. **Ingests identified profiles** (simulated LinkedIn / PubMed / Conference data)
+2. **Enriches leads** with company, location, and research intent signals
+3. **Applies a probability score (0–100)** to rank leads by likelihood to engage
+4. **Displays results** in an interactive Streamlit dashboard
+5. **Exports ranked leads** to CSV for BD teams
 
 ---
 
 ## Scoring Logic (0–100)
 
-| Signal | Weight |
-|------|--------|
-| Role fit (Toxicology / Safety / Preclinical) | +30 |
-| Company funding (Series A / B) | +20 |
-| Uses in-vitro models | +15 |
-| Open to New Approach Methodologies (NAMs) | +10 |
-| Location in innovation hub | +10 |
-| Recent liver/toxicology publication | +40 |
+| Signal                                       | Weight |
+| -------------------------------------------- | ------ |
+| Role fit (Toxicology / Safety / Preclinical) | +30    |
+| Company funding (Series A / B)               | +20    |
+| Uses in-vitro models                         | +15    |
+| Open to New Approach Methodologies (NAMs)    | +10    |
+| Location in innovation hub                   | +10    |
+| Recent liver / toxicology publication        | +40    |
 
-Scores are capped at **100** and used to rank leads from highest to lowest priority.
+**Scores are capped at 100** and used to rank leads from highest to lowest priority.
+
+---
+
+## Example Outcome
+
+* Junior scientist at a non-funded startup → **15 / 100**
+* Director of Safety Assessment at a Series B biotech in Cambridge with recent liver toxicity research → **90+ / 100**
 
 ---
 
 ## Repository Structure
 
 ```
-
 lead-intelligence-agent/
 │
 ├── data/
 │   ├── leads_raw.csv        # Initial identified profiles
 │   ├── leads_enriched.csv   # Enriched dataset
-│   └── leads_scored.csv     # Ranked leads with scores
+│   └── leads_scored.csv     # Final ranked leads with scores
 │
 ├── scoring.py               # Enrichment + scoring pipeline
 ├── app.py                   # Streamlit dashboard
 ├── README.md
-
-````
+```
 
 ---
 
 ## How to Run Locally
 
 ### 1. Install dependencies
+
 ```bash
 pip install pandas streamlit
-````
+```
 
-### 2. Run enrichment and scoring
+### 2️. Run the scoring pipeline
 
 ```bash
 python scoring.py
@@ -109,7 +75,7 @@ This generates:
 * `data/leads_enriched.csv`
 * `data/leads_scored.csv`
 
-### 3. Launch the dashboard
+### 3️. Launch the dashboard
 
 ```bash
 streamlit run app.py
@@ -117,26 +83,32 @@ streamlit run app.py
 
 ---
 
-## Dashboard Features
+## Data Sources (Simulated for Demo)
 
-* Ranked lead table
-* Minimum score filtering
-* Location-based filtering
-* CSV export of filtered results
+This prototype simulates signals from:
 
----
+* **LinkedIn / Sales Navigator** (roles, companies, locations)
+* **PubMed / Google Scholar** (recent toxicology publications)
+* **Conference attendee lists** (SOT, AACR, ISSX)
+* **Funding intelligence** (Series A/B, public biotech indicators)
 
-## Notes & Assumptions
-
-* This is a **prototype/demo**, not a production scraper
-* External data sources (funding, publications) are simulated to demonstrate logic
-* No platform policies are violated (no live scraping)
-* The system is designed to be easily extended with APIs (e.g. PubMed, Crunchbase, LinkedIn providers)
+>  No scraping or private APIs are used in this demo.
 
 ---
 
-## Author
-**Vedant Bhandare**
+## Future Extensions
 
-- Help you prepare **answers if Akash replies with questions**
-```
+* Live API integrations (Proxycurl, Semantic Scholar, Crunchbase)
+* Automated PubMed keyword extraction
+* Real-time lead refresh
+* CRM integration
+* Outreach personalization
+
+---
+
+## Submission Context
+
+This repository was created as a **working demo** to illustrate how an intelligent web agent can identify and rank high-quality leads for **3D in-vitro models in therapeutic research**.
+
+### Author
+### Vedant Bhandare
