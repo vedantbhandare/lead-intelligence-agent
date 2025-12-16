@@ -1,14 +1,12 @@
 import pandas as pd
 
-# -----------------------------
+
 # Load & normalize data
-# -----------------------------
 df = pd.read_csv("data/leads_raw.csv")
 df.columns = df.columns.str.strip().str.lower()
 
-# -----------------------------
+
 # Enrichment
-# -----------------------------
 funding_map = {
     "helix biotech": "Series B",
     "onconova therapeutics": "Series A",
@@ -43,9 +41,8 @@ df["open_to_nams"] = df["title"].str.contains(
     na=False
 )
 
-# -----------------------------
+
 # Scoring Engine
-# -----------------------------
 def calculate_score(row):
     score = 0
 
@@ -78,9 +75,8 @@ def calculate_score(row):
 
 df["probability_score"] = df.apply(calculate_score, axis=1)
 
-# -----------------------------
+
 # Rank & Save
-# -----------------------------
 df = df.sort_values(by="probability_score", ascending=False)
 df["rank"] = range(1, len(df) + 1)
 
